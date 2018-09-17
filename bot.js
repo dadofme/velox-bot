@@ -35,10 +35,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         switch(cmd) {
             // !ping
             case 'ping':
-                bot.sendMessage({ to: channelID, message: '!Pong' });
+                bot.sendMessage({ to: channelID, message: '@everyone' });
             break;
             case 'pong':
-                bot.sendMessage({ to: channelID, message: '!Ping' });
+                bot.sendMessage({ to: channelID, message: 'hehe xd' });
             break;
             default:
                 bot.sendMessage({ to: channelID, message: 'Unknown command.' });
